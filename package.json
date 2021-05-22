@@ -4,7 +4,7 @@
   "description": "Get Static Side Generator Hugo running with tailwindcss 2 and JIT",
   "main": "index.js",
   "license": "MIT",
-  "author": "FileFabrik",
+  "author": "FileFabrik <rt@FileFabrik.com>",
   "scripts": {
     "devWatcherTailwindStartFirst": "TAILWIND_MODE=watch NODE_ENV=development postcss ./assets/css/main.css -c ./assets/css/tailwind.config.js -o ./assets/css/tailwind.css -w",
     "server": "hugo server  --disableFastRender",
