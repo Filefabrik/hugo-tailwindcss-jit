@@ -2,7 +2,9 @@
 Get Static Side Generator Hugo running with tailwind 2 and JIT
 
 node.js: lts/fermium -> v14.17.0
+
 hugo: hugo v0.83.1
+
 IDE: PHPStorm 2021.1.2
 
 My intension was to get Hugo working with tailwindcss and the new JIT compiler.
