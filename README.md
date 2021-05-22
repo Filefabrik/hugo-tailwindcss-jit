@@ -42,4 +42,6 @@ for the build of the page i created an extra task "**buildTailwindAndHugo**".
 
 Conclusion: if you don't work on the layouts you need the **devWatcherTailwindStartFirst**, then just start the server. 
 
+![ksnip_20210522-132900](https://user-images.githubusercontent.com/84433563/119225757-216e3280-bb06-11eb-903e-cd4ff937a339.png)
+
 Hope that helps
