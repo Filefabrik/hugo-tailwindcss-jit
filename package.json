@@ -1,0 +1,24 @@
+{
+  "name": "hugo-tailwindcss-jit",
+  "version": "1.0.0",
+  "description": "Get Static Side Generator Hugo running with tailwindcss 2 and JIT",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "FileFabrik",
+  "scripts": {
+    "devWatcherTailwindStartFirst": "TAILWIND_MODE=watch NODE_ENV=development postcss ./assets/css/main.css -c ./assets/css/tailwind.config.js -o ./assets/css/tailwind.css -w",
+    "server": "hugo server  --disableFastRender",
+    "buildTailwindDistCssOnly": "TAILWIND_MODE=build NODE_ENV=production postcss ./assets/css/main.css -o ./assets/css/tailwind.css",
+    "buildTailwindAndHugo": "TAILWIND_MODE=build NODE_ENV=production postcss ./assets/css/main.css -o ./assets/css/tailwind.css && hugo --gc --minify"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "npm": "^7.14.0",
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
+  },
+  "devDependencies": {
+    "postcss-import": "^14.0.2"
+  }
+}
