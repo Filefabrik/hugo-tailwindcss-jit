@@ -1,5 +1,6 @@
 module.exports = {
-	mode    : 'jit',
+	// mode    : 'jit',
+	mode    : 'production' !== process.env.NODE_ENV ?'jit':'',
 	purge   : ['layouts/**/*.html'],
 	darkMode: false, // or 'media' or 'class'
 	theme   : {
